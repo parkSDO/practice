@@ -10,7 +10,12 @@
 		0A5D0470357C1992B66F17F7 /* Pods_practiceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF8E6D3BD5FBDE72AE9A1750 /* Pods_practiceTests.framework */; };
 		4302FEE3E266A67003EF0623 /* Pods_practiceUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF0FF64B21F54E0EB33FE3AB /* Pods_practiceUITests.framework */; };
 		8E0B054F1EF4C157008E0DEC /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0B054E1EF4C157008E0DEC /* SuccessViewController.swift */; };
+		8E1E66DF1EFA5DCF00F7EA03 /* AccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1E66DE1EFA5DCF00F7EA03 /* AccessViewController.swift */; };
 		8E3A9FEC1EEBAE88002A6A77 /* JoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3A9FEB1EEBAE88002A6A77 /* JoinViewController.swift */; };
+		8E866A261F08ED60003FEA33 /* tableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E866A251F08ED60003FEA33 /* tableViewCell.swift */; };
+		8E866A281F08EFA6003FEA33 /* WriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E866A271F08EFA6003FEA33 /* WriteViewController.swift */; };
+		8E866A2A1F08F2DE003FEA33 /* Write.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E866A291F08F2DE003FEA33 /* Write.swift */; };
+		8E866A2C1F08F6E9003FEA33 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E866A2B1F08F6E9003FEA33 /* Util.swift */; };
 		8EB18C791EE9870D0033DD5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB18C781EE9870D0033DD5E /* AppDelegate.swift */; };
 		8EB18C7B1EE9870D0033DD5E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB18C7A1EE9870D0033DD5E /* ViewController.swift */; };
 		8EB18C7E1EE9870D0033DD5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EB18C7C1EE9870D0033DD5E /* Main.storyboard */; };
@@ -45,9 +50,14 @@
 		3E14466968CFAC479073A407 /* Pods-practiceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-practiceTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-practiceTests/Pods-practiceTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5FF96C9C379D7E6492F6BEDB /* Pods-practiceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-practiceTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-practiceTests/Pods-practiceTests.release.xcconfig"; sourceTree = "<group>"; };
 		8E0B054E1EF4C157008E0DEC /* SuccessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
+		8E1E66DE1EFA5DCF00F7EA03 /* AccessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessViewController.swift; sourceTree = "<group>"; };
 		8E3A9FEB1EEBAE88002A6A77 /* JoinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinViewController.swift; sourceTree = "<group>"; };
 		8E6FF6D71EF42760001FC065 /* practice.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = practice.entitlements; sourceTree = "<group>"; };
 		8E6FF6D81EF4281F001FC065 /* practice-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "practice-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		8E866A251F08ED60003FEA33 /* tableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tableViewCell.swift; sourceTree = "<group>"; };
+		8E866A271F08EFA6003FEA33 /* WriteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteViewController.swift; sourceTree = "<group>"; };
+		8E866A291F08F2DE003FEA33 /* Write.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Write.swift; sourceTree = "<group>"; };
+		8E866A2B1F08F6E9003FEA33 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		8EB18C751EE9870D0033DD5E /* practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = practice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EB18C781EE9870D0033DD5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EB18C7A1EE9870D0033DD5E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +146,11 @@
 				8ED6CF841EF3D71100862E71 /* GoogleService-Info.plist */,
 				8E6FF6D81EF4281F001FC065 /* practice-Bridging-Header.h */,
 				8E0B054E1EF4C157008E0DEC /* SuccessViewController.swift */,
+				8E1E66DE1EFA5DCF00F7EA03 /* AccessViewController.swift */,
+				8E866A251F08ED60003FEA33 /* tableViewCell.swift */,
+				8E866A271F08EFA6003FEA33 /* WriteViewController.swift */,
+				8E866A291F08F2DE003FEA33 /* Write.swift */,
+				8E866A2B1F08F6E9003FEA33 /* Util.swift */,
 			);
 			path = practice;
 			sourceTree = "<group>";
@@ -470,10 +485,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E1E66DF1EFA5DCF00F7EA03 /* AccessViewController.swift in Sources */,
 				8EB18C7B1EE9870D0033DD5E /* ViewController.swift in Sources */,
 				8EB18C811EE9870D0033DD5E /* practice.xcdatamodeld in Sources */,
 				8E3A9FEC1EEBAE88002A6A77 /* JoinViewController.swift in Sources */,
 				8E0B054F1EF4C157008E0DEC /* SuccessViewController.swift in Sources */,
+				8E866A261F08ED60003FEA33 /* tableViewCell.swift in Sources */,
+				8E866A281F08EFA6003FEA33 /* WriteViewController.swift in Sources */,
+				8E866A2C1F08F6E9003FEA33 /* Util.swift in Sources */,
+				8E866A2A1F08F2DE003FEA33 /* Write.swift in Sources */,
 				8EB18C791EE9870D0033DD5E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

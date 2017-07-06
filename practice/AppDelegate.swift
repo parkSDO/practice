@@ -20,8 +20,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         //firebase등록
+        GIDSignIn.sharedInstance().signOut()
         FIRApp.configure()
-        
+        if FIRAuth.auth()?.currentUser != nil {
+            print("signed in")            
+            print("GGGG \(FIRAuth.auth()?.currentUser)")
+        } else {
+            print("signed out")
+            // No user is signed in.
+            // ...
+        }
         GIDSignIn.sharedInstance().clientID = FIRApp.defaultApp()?.options.clientID
         GIDSignIn.sharedInstance().delegate = self
         return true
@@ -34,7 +42,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     }
     
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
-        if let error = error {
+//        GIDSignIn.sharedInstance().signOut()
+        if error != nil {
             // ...
             return
         }
@@ -43,10 +52,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         let credential = FIRGoogleAuthProvider.credential(withIDToken: authentication.idToken,
                                                           accessToken: authentication.accessToken)
         FIRAuth.auth()?.signIn(with: credential) { (user, error) in
-            // ...
-            if let error = error {
+            if error != nil {
                 // ...
                 return
+            } else {
+                let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SuccessViewController") as! SuccessViewController
+                self.window?.rootViewController?.present(vc, animated: true, completion: nil)
             }
         }
     }

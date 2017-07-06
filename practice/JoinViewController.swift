@@ -32,8 +32,8 @@ class JoinViewController: UIViewController {
             return
         } else {
             let person = ["name": name.text!, "pass": pass.text!]
-            dbRef.child("user/01").setValue(person)
-            self.dismiss(animated: true, completion: {});
+            dbRef.child("user/\(name.text!)").setValue(person)
+            self.dismiss(animated: true, completion: {})
         }
     }
 }
